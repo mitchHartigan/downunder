@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Cardo|Roboto:300&display=swap");
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2vh 2vw 0vh 2vw;
+  position: fixed;
+  width: 100%;
+}
+
+.navBar__logoContainer {
+  padding-left: 1vw;
+}
+
+.navBar__logoContainer img {
+  cursor: pointer;
+}
+
+.navBar__navLinkContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-right: 4vw;
+}
+
+.navBar__navLink {
+  height: 50px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-family: "Cardo";
+  font-size: 14pt;
+  margin: 0px 2vw 0px 2vw;
+  cursor: pointer;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/heroImg.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__heroTextContainer {
+  width: 100%;
+}
+
+.hero__titleText {
+  text-align: center;
+  font-family: "Cardo";
+  font-size: 85pt;
+  color: white;
+  font-weight: normal;
+}
+
+.hero__subtitleText {
+  font-weight: normal;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 26pt;
+}
+
+.page {
+  background-color: white;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.page-2 {
+  background-color: black;
+  height: vh;
+}
+
+h1 {
+  margin: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+/*# sourceMappingURL=index.css.map */
