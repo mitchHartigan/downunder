@@ -1,17 +1,30 @@
 import React from "react";
 import { Quote } from "./quote";
+import Slider from "infinite-react-carousel";
 
 export function Testimonial(props) {
-  let quoteArr = [
-    <Quote author="John Wick">Here is the text of the quote!</Quote>,
-    <Quote author="John Wick">Here is the text of the quote!</Quote>
-  ];
-
   return (
-    <div>
-      {quoteArr.map(quote => {
-        return quote;
-      })}
+    <div className="testimonial">
+      <Slider className="testimonial__carousel" dots>
+        <>
+          <Quote author="John Wick">
+            During their work here, Michael and his crew were very professional
+            - working hard every day, performing high quality work, leaving no
+            mess behind, and keeping open lines of communication. We will
+            definitely be looking to contact Michael again when we are ready to
+            focus on more of the softscape work to be done. Highly recommended.
+          </Quote>
+        </>
+        <div>
+          <Quote author="John Wick">
+            During their work here, Michael and his crew were very professional
+            - working hard every day, performing high quality work, leaving no
+            mess behind, and keeping open lines of communication. We will
+            definitely be looking to contact Michael again when we are ready to
+            focus on more of the softscape work to be done. Highly recommended.
+          </Quote>
+        </div>
+      </Slider>
     </div>
   );
 }

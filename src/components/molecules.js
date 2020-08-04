@@ -12,18 +12,6 @@ export function Logo(props) {
   );
 }
 
-export function TitleText(props) {
-  return <h1 className={props.textStyle}>{props.children}</h1>;
-}
-
-export function Button(props) {
-  return (
-    <div className={props.containerStyle}>
-      <button className={props.buttonStyle}>{props.children}</button>
-    </div>
-  );
-}
-
 export function Service(props) {
   return (
     <div className="callToAction__service">
@@ -41,6 +29,18 @@ export function Service(props) {
   );
 }
 
+export function TitleText(props) {
+  return <h1 className={props.textStyle}>{props.children}</h1>;
+}
+
+export function Button(props) {
+  return (
+    <div className={props.containerStyle}>
+      <button className={props.buttonStyle}>{props.children}</button>
+    </div>
+  );
+}
+
 export function Image(props) {
   return (
     <img
@@ -51,4 +51,8 @@ export function Image(props) {
       height={props.height}
     />
   );
+}
+
+export function TextLine(props) {
+  return <span className={props.lineStyle}></span>;
 }

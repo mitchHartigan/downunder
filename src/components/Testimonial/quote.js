@@ -1,5 +1,4 @@
 import React from "react";
-
 /**
  *
  * @param {string} children - The text to be displayed in the quote.
@@ -9,8 +8,8 @@ import React from "react";
 export function Quote(props) {
   return (
     <div>
-      <p>{props.author}</p>
-      <p>{props.children}</p>
+      <p className="testimonial__text">{props.children}</p>
+      <p className="testimonial__text">- {props.author}</p>
     </div>
   );
 }

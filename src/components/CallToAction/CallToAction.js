@@ -19,7 +19,7 @@ export function CallToAction(props) {
         <br />
         ipsum ligula euismod arcu, dignissim molestie velit enim sed.
         <br />
-        Ipsum ligula euismod arcu, dignissim molestie velit.
+        Ipsum ligula euismod arcu, dignissim molestie velit.  
       </Description>
 
       <div className="callToAction__servicesContainer">
@@ -31,7 +31,7 @@ export function CallToAction(props) {
           imgHeight={"160"}
         >
           Lorem ipsum dolor sit amet, consectetur <br />
-          adipiscing elit. Mauris aliquet, orci sit amet.
+          adipiscing elit. Mauris aliquet, orci sit amet. 
         </Service>
 
         <Service

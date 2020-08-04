@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../molecules";
+import { Button, TextLine } from "../molecules";
 
 export function Description(props) {
   return (
@@ -7,7 +7,7 @@ export function Description(props) {
       <h1 className="callToAction__descriptionContainer__titleText">
         {props.title}
       </h1>
-      <span className="textLine"></span>
+      <TextLine lineStyle={"textLine--green"} />
       <p className="callToAction__descriptionContainer__descriptionText">
         {props.children}
       </p>
