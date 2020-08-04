@@ -15,7 +15,7 @@ export function Testimonial(props) {
             focus on more of the softscape work to be done. Highly recommended.
           </Quote>
         </>
-        <div>
+        <>
           <Quote author="John Wick">
             During their work here, Michael and his crew were very professional
             - working hard every day, performing high quality work, leaving no
@@ -23,7 +23,7 @@ export function Testimonial(props) {
             definitely be looking to contact Michael again when we are ready to
             focus on more of the softscape work to be done. Highly recommended.
           </Quote>
-        </div>
+        </>
       </Slider>
     </div>
   );
