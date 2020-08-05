@@ -1,10 +1,12 @@
 import React from "react";
 import { Quote } from "./quote";
 import Slider from "infinite-react-carousel";
+import { PageTitle } from "../Gallery/PageTitle";
 
 export function Testimonial(props) {
   return (
     <div className="testimonial">
+      <PageTitle white={true}>Our Customers</PageTitle>
       <Slider className="testimonial__carousel" dots>
         <>
           <Quote author="John Wick">

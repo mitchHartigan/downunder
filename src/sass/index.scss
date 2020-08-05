@@ -177,7 +177,6 @@ $theme_color_green: #6aaf08;
 
 .testimonial {
   width: 100%;
-  height: 30vh;
   background-color: $theme_color_green;
   &__text {
     margin-top: 10px;
@@ -185,7 +184,7 @@ $theme_color_green: #6aaf08;
     font-size: $title_font_size_xs;
     text-align: center;
     color: white;
-    padding: 1vh 18vw 1vh 18vw;
+    padding: 1vh 15vw 1vh 15vw;
     line-height: 2;
   }
   &__carousel {
