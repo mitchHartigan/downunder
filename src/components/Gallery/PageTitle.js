@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export const PageTitle = (props) => {
+export const PageTitle = props => {
   console.log("props", props, "props.white", props.white);
   return (
     <Container>
@@ -22,14 +22,14 @@ export const Container = styled.div`
 
 export const Title = styled.h2`
   font-family: "Cardo";
-  color: ${(props) => (props.white ? "white" : "black")};
-  font-size: 1.5vw;
+  color: ${props => (props.white ? "white" : "black")};
+  font-size: 16pt;
   font-weight: 300;
   margin: 1vh 0vw 1vh 0vw;
 `;
 
 export const Span = styled.div`
   width: 4vw;
-  background-color: ${(props) => (props.white ? "white" : "#6aaf08")};
+  background-color: ${props => (props.white ? "white" : "#6aaf08")};
   height: 0.15vw;
 `;

@@ -1,20 +1,34 @@
-import React from "react";
+import React, { Component } from "react";
 import Header from "./Header";
 import Hero from "./Hero";
-import { CallToAction } from "./CallToAction/CallToAction";
 import { Testimonial } from "./Testimonial/Testimonial";
 import Gallery from "./Gallery/index";
+import Modal from "./Modal/index";
 
 // Is this component useless? Can't we just add everything in App.js?
 
-export function Page() {
-  return (
-    <div>
-      <Header />
-      <Hero />
-      {/* <CallToAction /> */}
-      <Testimonial />
-      <Gallery />
-    </div>
-  );
+export class Page extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      showModal: false,
+      property: null
+    };
+  }
+
+  toggleModal = property => {
+    this.setState({ showModal: !this.state.showModal, property: property });
+  };
+
+  render() {
+    return (
+      <div>
+        <Header />
+        <Hero />
+        <Testimonial />
+        <Gallery toggleModal={this.toggleModal} />
+      </div>
+    );
+  }
 }
