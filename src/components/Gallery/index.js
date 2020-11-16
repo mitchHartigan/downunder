@@ -8,39 +8,39 @@ export default class Gallery extends Component {
     const properties = [
       {
         name: "Calle Brisa",
-        description: "this is where the description will go"
+        description: "this is where the description will go",
       },
       {
         name: "Calle Brisa",
-        description: "this is where the description will go"
+        description: "this is where the description will go",
       },
       {
         name: "Calle Brisa",
-        description: "this is where the description will go"
+        description: "this is where the description will go",
       },
       {
         name: "Calle Brisa",
-        description: "this is where the description will go"
+        description: "this is where the description will go",
       },
       {
         name: "Calle Brisa",
-        description: "this is where the description will go"
+        description: "this is where the description will go",
       },
       {
         name: "Calle Brisa",
-        description: "this is where the description will go"
-      }
+        description: "this is where the description will go",
+      },
     ];
     return (
       <div>
         <PageTitle>Our Work</PageTitle>
         <ProjectContainer>
-          {properties.map(property => {
+          {properties.map((property) => {
             return (
               <Property
                 key={property.name}
                 property={property}
-                toggleModal={function() {
+                toggleModal={function () {
                   console.log("here I am!");
                 }}
               />

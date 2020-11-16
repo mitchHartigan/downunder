@@ -7,7 +7,7 @@ export default class Property extends Component {
     super(props);
 
     this.state = {
-      hovered: false
+      hovered: false,
     };
   }
 
@@ -30,11 +30,13 @@ export default class Property extends Component {
 }
 
 const Title = styled.div`
-  font-family: Cardo;
-  font-size: 24px;
+  font-family: Roboto;
+  font-size: 28px;
   text-align: center;
-  color: red;
-  visibility: ${props => (props.hovered ? "visible" : "hidden")};
+  color: white;
+  text-shadow: 2px 1px 2px black;
+  opacity: ${(props) => (props.hovered ? "1" : "0")};
+  transition: opacity 150ms linear;
 `;
 
 const Container = styled.div`
@@ -48,12 +50,14 @@ const Container = styled.div`
   background-image: url(${calleBrisa});
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  transition: box-shadow 200ms linear;
   @media (max-width: 1100px) {
     width: 700px;
     height: 500px;
   }
   &: hover {
-    filter: blur(2px);
-    transition: filter 300ms ease;
+    box-shadow: 0px 2px 12px #467506;
+    transition: box-shadow 200ms ease;
   }
 `;
