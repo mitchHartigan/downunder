@@ -13,11 +13,11 @@ export class Page extends Component {
 
     this.state = {
       showModal: false,
-      property: null
+      property: null,
     };
   }
 
-  toggleModal = property => {
+  toggleModal = (property) => {
     this.setState({ showModal: !this.state.showModal, property: property });
   };
 
@@ -27,6 +27,7 @@ export class Page extends Component {
         <Header />
         <Hero />
         <Testimonial />
+        <Modal show={this.state.showModal} toggleModal={this.toggleModal} />
         <Gallery toggleModal={this.toggleModal} />
       </div>
     );

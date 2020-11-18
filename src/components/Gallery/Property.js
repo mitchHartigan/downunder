@@ -16,14 +16,16 @@ export default class Property extends Component {
   };
 
   render() {
+    const { toggleModal } = this.props;
+    const { hovered } = this.state;
+
     return (
       <Container
         onMouseEnter={this.toggleHover}
         onMouseLeave={this.toggleHover}
-        hovered={this.state.hovered}
-        onClick={this.props.toggleModal(this.props.property)}
+        onClick={toggleModal}
       >
-        <Title hovered={this.state.hovered}>Calle Brisa</Title>
+        <Title hovered={hovered}>Calle Brisa</Title>
       </Container>
     );
   }
@@ -32,6 +34,7 @@ export default class Property extends Component {
 const Title = styled.div`
   font-family: Roboto;
   font-size: 28px;
+  font-weight: 500;
   text-align: center;
   color: white;
   text-shadow: 2px 1px 2px black;

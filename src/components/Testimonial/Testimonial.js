@@ -7,7 +7,15 @@ export function Testimonial(props) {
   return (
     <div className="testimonial">
       <PageTitle white={true}>Our Customers</PageTitle>
-      <Slider className="testimonial__carousel" dots>
+      <Slider
+        className="testimonial__carousel"
+        dots
+        arrows={false}
+        autoplay
+        autoplaySpeed={10000}
+        pauseOnHover
+        duration={300}
+      >
         <>
           <Quote author="John Wick">
             During their work here, Michael and his crew were very professional

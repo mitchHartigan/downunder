@@ -11,24 +11,12 @@ export default class Gallery extends Component {
         description: "this is where the description will go",
       },
       {
-        name: "Calle Brisa",
+        name: "Cale ",
         description: "this is where the description will go",
       },
       {
-        name: "Calle Brisa",
-        description: "this is where the description will go",
-      },
-      {
-        name: "Calle Brisa",
-        description: "this is where the description will go",
-      },
-      {
-        name: "Calle Brisa",
-        description: "this is where the description will go",
-      },
-      {
-        name: "Calle Brisa",
-        description: "this is where the description will go",
+        name: "Bill",
+        description: "yea",
       },
     ];
     return (
@@ -40,9 +28,7 @@ export default class Gallery extends Component {
               <Property
                 key={property.name}
                 property={property}
-                toggleModal={function () {
-                  console.log("here I am!");
-                }}
+                toggleModal={this.props.toggleModal}
               />
             );
           })}
