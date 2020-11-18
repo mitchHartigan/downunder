@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import calleBrisa from "./calleBrisa.png";
 
-export default class Property extends Component {
+export default class House extends Component {
   constructor(props) {
     super(props);
 
@@ -11,28 +10,33 @@ export default class Property extends Component {
     };
   }
 
+  displayModal = () => {
+    this.props.toggleModal(this.props.house);
+  };
+
   toggleHover = () => {
     this.setState({ hovered: !this.state.hovered });
   };
 
   render() {
-    const { toggleModal } = this.props;
+    const { house } = this.props;
     const { hovered } = this.state;
 
     return (
       <Container
         onMouseEnter={this.toggleHover}
         onMouseLeave={this.toggleHover}
-        onClick={toggleModal}
+        onClick={this.displayModal}
+        thumbnail={house.thumbnail}
       >
-        <Title hovered={hovered}>Calle Brisa</Title>
+        <Title hovered={hovered}>{house.name}</Title>
       </Container>
     );
   }
 }
 
 const Title = styled.div`
-  font-family: Roboto;
+  font-family: Cardo;
   font-size: 28px;
   font-weight: 500;
   text-align: center;
@@ -50,8 +54,8 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-image: url(${calleBrisa});
-  background-position: center;
+  background-image: url(${(props) => props.thumbnail});
+  background-position: center
   background-repeat: no-repeat;
   background-size: cover;
   transition: box-shadow 200ms linear;

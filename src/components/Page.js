@@ -13,12 +13,17 @@ export class Page extends Component {
 
     this.state = {
       showModal: false,
-      property: null,
+      house: {
+        images: [""],
+      },
     };
   }
 
-  toggleModal = (property) => {
-    this.setState({ showModal: !this.state.showModal, property: property });
+  toggleModal = (house) => {
+    console.log("house from Page:", house);
+    this.setState({ showModal: !this.state.showModal, house: house }, () => {
+      console.log("modal toggled, house:", this.state.house);
+    });
   };
 
   render() {
@@ -27,7 +32,11 @@ export class Page extends Component {
         <Header />
         <Hero />
         <Testimonial />
-        <Modal show={this.state.showModal} toggleModal={this.toggleModal} />
+        <Modal
+          show={this.state.showModal}
+          toggleModal={this.toggleModal}
+          house={this.state.house}
+        />
         <Gallery toggleModal={this.toggleModal} />
       </div>
     );

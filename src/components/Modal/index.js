@@ -4,15 +4,25 @@ import { PageTitle } from "../Gallery/PageTitle";
 import Slider from "infinite-react-carousel";
 
 export default class Modal extends Component {
+  hideModal = () => {
+    const defaultHouseObj = {
+      name: "",
+      description: "",
+      images: [""],
+      thumbnail: "",
+    };
+    this.props.toggleModal(defaultHouseObj);
+  };
+
   render() {
-    const { toggleModal, show } = this.props;
+    const { show, house } = this.props;
 
     return (
       <BlurContainer show={show}>
-        <PropertyContainer>
-          <Property show={show}>
+        <HouseContainer>
+          <House show={show}>
             <ExitButtonContainer>
-              <ExitButton onClick={toggleModal}>
+              <ExitButton onClick={this.hideModal}>
                 {"< Back to Gallery"}
               </ExitButton>
             </ExitButtonContainer>
@@ -24,34 +34,19 @@ export default class Modal extends Component {
               autoplaySpeed={6000}
               duration={300}
             >
-              <Image></Image>
-              <Image></Image>
+              {house.images.map((source) => {
+                return <Image source={source} />;
+              })}
             </Slider>
+
             <PageTitle
               additionalStyles={"margin-top: -20px; margin-bottom: 20px;"}
             >
-              Title of the Property
+              {house.name}
             </PageTitle>
-            <PropertyDescription>
-              Here is the text. During their work here, Michael and his crew
-              were very professional - working hard every day, performing high
-              quality work, leaving no mess behind, and keeping open lines of
-              communication. We will definitely be looking to contact Michael
-              again when we are ready to focus on more of the softscape work to
-              be done. Highly recommended. During their work here, Michael and
-              his crew were very professional - working hard every day,
-              performing high quality work, leaving no mess behind, and keeping
-              open lines of communication. We will definitely be looking to
-              contact Michael again when we are ready to focus on more of the
-              softscape work to be done. Highly recommended. During their work
-              here, Michael and his crew were very professional - working hard
-              every day, performing high quality work, leaving no mess behind,
-              and keeping open lines of communication. We will definitely be
-              looking to contact Michael again when we are ready to focus on
-              more of the softscape work to be done. Highly recommended.
-            </PropertyDescription>
-          </Property>
-        </PropertyContainer>
+            <HouseDescription>{house.description}</HouseDescription>
+          </House>
+        </HouseContainer>
       </BlurContainer>
     );
   }
@@ -102,7 +97,7 @@ const fadeIn = keyframes`
   }
 `;
 
-const Property = styled.div`
+const House = styled.div`
   width: 70vw;
   padding: 30px 80px 30px 80px;
   margin-top: 5vh;
@@ -117,14 +112,14 @@ const Property = styled.div`
   }
 `;
 
-const PropertyContainer = styled.div`
+const HouseContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 `;
 
-const PropertyDescription = styled.p`
+const HouseDescription = styled.p`
   white-space: pre-wrap;
   font-family: Roboto;
   font-weight: 400;
@@ -133,8 +128,9 @@ const PropertyDescription = styled.p`
 
 const Image = styled.div`
   width: 50vw;
-  height: 50vh;
-  background-image: url("home-design.jpg");
+  height: 70vh;
+  background-image: url(${(props) => props.source});
   background-position: center;
   outline: none;
+  background-size: cover;
 `;

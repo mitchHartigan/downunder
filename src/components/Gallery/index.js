@@ -1,33 +1,20 @@
 import React, { Component } from "react";
 import { PageTitle } from "./PageTitle";
-import Property from "./Property";
+import House from "./House";
 import styled from "styled-components";
+import { houses } from "./houseData";
 
 export default class Gallery extends Component {
   render() {
-    const properties = [
-      {
-        name: "Calle Brisa",
-        description: "this is where the description will go",
-      },
-      {
-        name: "Cale ",
-        description: "this is where the description will go",
-      },
-      {
-        name: "Bill",
-        description: "yea",
-      },
-    ];
     return (
       <div>
         <PageTitle>Our Work</PageTitle>
         <ProjectContainer>
-          {properties.map((property) => {
+          {houses.map((house) => {
             return (
-              <Property
-                key={property.name}
-                property={property}
+              <House
+                key={house.name}
+                house={house}
                 toggleModal={this.props.toggleModal}
               />
             );
