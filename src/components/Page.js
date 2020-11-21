@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import { Testimonial } from "./Testimonial/Testimonial";
 import Gallery from "./Gallery/index";
 import Modal from "./Modal/index";
+import ServicePreview from "./ServicePreview/index";
 
 // Is this component useless? Can't we just add everything in App.js?
 
@@ -31,6 +32,7 @@ export class Page extends Component {
       <div>
         <Header />
         <Hero />
+        <ServicePreview />
         <Testimonial />
         <Modal
           show={this.state.showModal}
