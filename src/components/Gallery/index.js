@@ -10,7 +10,7 @@ export default class Gallery extends Component {
       <div>
         <PageTitle>Our Work</PageTitle>
         <ProjectContainer>
-          {houses.map((house) => {
+          {houses.map(house => {
             return (
               <House
                 key={house.name}

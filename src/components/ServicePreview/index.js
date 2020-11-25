@@ -8,7 +8,10 @@ export default function ServicePreview() {
     <PreviewContainer>
       <Preview>
         <DescriptionContainer>
-          <PageTitle additionalStyles={"align-items: flex-start"}>
+          <PageTitle
+            additionalStyles={"align-items: flex-start"}
+            titleStyles={"font-weight: 600"}
+          >
             Let's build your dream garden.
           </PageTitle>
           <DescriptionText>
@@ -52,6 +55,9 @@ const Preview = styled.div`
   align-items: flex-end;
   justify-content: space-around;
   margin: 40px 8vw 50px 8vw;
+  @media (max-width: 1600px) {
+    margin: 40px 5vw 50px 5vw;
+  }
 `;
 
 const ServiceContainer = styled.div`
@@ -59,6 +65,9 @@ const ServiceContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 20vw;
+  @media (max-width: 1600px) {
+    width: 25vw;
+  }
 `;
 
 const ServiceTitle = styled.h2`
@@ -75,6 +84,7 @@ const ServiceDescription = styled.p`
   line-height: 35px;
   text-align: center;
   margin-top: 10px;
+  margin-bottom: -10px;
 `;
 
 const ServiceImage = styled.img``;
@@ -88,11 +98,14 @@ const DescriptionContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  @media (max-width: 1600px) {
+    width: 30vw;
+  }
 `;
 
 const DescriptionText = styled.p`
   font-family: Roboto;
   font-size: 16px;
   line-height: 40px;
-  margin-top: -10px;
+  margin-bottom: 10px;
 `;
