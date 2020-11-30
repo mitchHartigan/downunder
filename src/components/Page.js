@@ -5,6 +5,7 @@ import { Testimonial } from "./Testimonial/Testimonial";
 import Gallery from "./Gallery/index";
 import Modal from "./Modal/index";
 import ServicePreview from "./ServicePreview/index";
+import Why from "./Why/index";
 
 // Is this component useless? Can't we just add everything in App.js?
 
@@ -21,10 +22,7 @@ export class Page extends Component {
   }
 
   toggleModal = (house) => {
-    console.log("house from Page:", house);
-    this.setState({ showModal: !this.state.showModal, house: house }, () => {
-      console.log("modal toggled, house:", this.state.house);
-    });
+    this.setState({ showModal: !this.state.showModal, house: house }, () => {});
   };
 
   render() {
@@ -40,6 +38,7 @@ export class Page extends Component {
           house={this.state.house}
         />
         <Gallery toggleModal={this.toggleModal} />
+        <Why />
       </div>
     );
   }

@@ -54,10 +54,6 @@ const Preview = styled.div`
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-around;
-  margin: 40px 8vw 50px 8vw;
-  @media (max-width: 1600px) {
-    margin: 40px 5vw 50px 5vw;
-  }
 `;
 
 const ServiceContainer = styled.div`
@@ -91,10 +87,14 @@ const ServiceImage = styled.img``;
 
 const PreviewContainer = styled.div`
   width: 100%;
+  padding: 40px 8vw 50px 8vw;
+  @media (max-width: 1600px) {
+    padding: 40px 5vw 50px 5vw;
+  }
 `;
 
 const DescriptionContainer = styled.div`
-  width: 25vw;
+  width: 30vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
