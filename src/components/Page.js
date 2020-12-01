@@ -6,6 +6,7 @@ import Gallery from "./Gallery/index";
 import Modal from "./Modal/index";
 import ServicePreview from "./ServicePreview/index";
 import Why from "./Why/index";
+import AboutUs from "./AboutUs/index";
 
 // Is this component useless? Can't we just add everything in App.js?
 
@@ -39,6 +40,7 @@ export class Page extends Component {
         />
         <Gallery toggleModal={this.toggleModal} />
         <Why />
+        <AboutUs />
       </div>
     );
   }
