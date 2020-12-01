@@ -48,7 +48,7 @@ const Description = styled.p`
   margin: 0px;
   margin-bottom: 25px;
   font-family: Roboto;
-  font-size: 16pt;
+  font-size: 14pt;
   line-height: 35px;
   color: white;
   text-align: justify;

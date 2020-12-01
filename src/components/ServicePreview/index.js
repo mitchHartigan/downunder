@@ -29,8 +29,8 @@ export default function ServicePreview() {
         </DescriptionContainer>
 
         <ServiceContainer>
-          <img src="hardscape.svg" alt="" />
-          <ServiceTitle>Hardscape</ServiceTitle>
+          <img src="lighting.svg" alt="" />
+          <ServiceTitle>Lighting</ServiceTitle>
           <ServiceDescription>
             Here is a description of this particular service. It is meant to go
             onto two lines of text.
