@@ -49,11 +49,24 @@ export default function ServicePreview() {
     </PreviewContainer>
   );
 }
+
+const PreviewContainer = styled.div`
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: 1600px) {
+    height: 50vh;
+  }
+`;
+
 const Preview = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-around;
+  margin-bottom: ;
 `;
 
 const ServiceContainer = styled.div`
@@ -85,14 +98,6 @@ const ServiceDescription = styled.p`
 
 const ServiceImage = styled.img``;
 
-const PreviewContainer = styled.div`
-  width: 100%;
-  padding: 40px 8vw 50px 8vw;
-  @media (max-width: 1600px) {
-    padding: 40px 5vw 50px 5vw;
-  }
-`;
-
 const DescriptionContainer = styled.div`
   width: 30vw;
   display: flex;
@@ -108,4 +113,5 @@ const DescriptionText = styled.p`
   font-size: 16px;
   line-height: 40px;
   margin-bottom: 10px;
+  margin-top: 15px;
 `;
