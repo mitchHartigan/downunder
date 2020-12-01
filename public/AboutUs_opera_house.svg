@@ -127,11 +127,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="1240.5562"
-     inkscape:cy="191.5684"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="247.55631"
+     inkscape:cy="124.75762"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g88"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="1920"
@@ -255,7 +255,7 @@
           </g>
           <g
              id="g262"
-             transform="translate(191.0259,202.5693)">
+             transform="matrix(1.0869065,0,0,1.0869065,186.32721,198.81186)">
             <path
                d="M 0,0 C 0,0 16.407,28.671 55.146,45.534 V 0.465 c 0,0 -10.482,14.534 -21.42,16.356 C 22.788,18.645 0,0 0,0"
                style="fill:#eaeaea;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -263,7 +263,7 @@
           </g>
           <g
              id="g266"
-             transform="translate(301.3193,202.7236)">
+             transform="matrix(1.0785378,0,0,1.0785378,305.20441,199.29521)">
             <path
                d="M 0,0 C 0,0 -16.407,28.671 -55.147,45.534 V 0.465 c 0,0 10.483,14.533 21.42,16.356 C -22.788,18.645 0,0 0,0"
                style="fill:#eaeaea;fill-opacity:1;fill-rule:nonzero;stroke:none"
