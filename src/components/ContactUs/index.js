@@ -32,8 +32,6 @@ export default function ContactUs() {
           <ContactInfoDescription>
             Email | hi@downunderlandscape.com
           </ContactInfoDescription>
-
-          <ContactInfoDescription>Sunday | Closed </ContactInfoDescription>
         </Contact>
       </ContactInfoRow>
     </Container>

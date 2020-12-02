@@ -84,6 +84,7 @@ const BlurContainer = styled.div`
   position: absolute;
   backdrop-filter: blur(4px);
   z-index: 10;
+  padding-bottom: 100px;
   display: ${(props) => (props.show ? "auto" : "none")};
 `;
 
