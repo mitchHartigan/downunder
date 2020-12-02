@@ -29,7 +29,7 @@ $theme_color_green: #6aaf08;
   position: fixed;
   width: 100%;
   &__logoContainer {
-    padding-left: 1vw;
+    padding-left: 20px;
     & img {
       cursor: pointer;
     }
@@ -67,7 +67,7 @@ $theme_color_green: #6aaf08;
   &__titleText {
     text-align: center;
     font-family: $title_font;
-    font-size: $title_font_size_xlg;
+    font-size: 97pt;
     color: $font_color_white;
     font-weight: normal;
   }
@@ -76,7 +76,7 @@ $theme_color_green: #6aaf08;
     text-align: center;
     color: $font_color_white;
     font-family: $subtitle_font;
-    font-size: $title_font_size_md;
+    font-size: 24pt;
     margin-bottom: 30px;
   }
 }
@@ -142,7 +142,7 @@ $theme_color_green: #6aaf08;
 .button {
   font-weight: normal;
   font-family: $title_font;
-  font-size: $title_font_size_xs;
+  font-size: 16pt;
   border-radius: 5px;
   border: none;
   color: $font_color_white;
@@ -178,6 +178,11 @@ $theme_color_green: #6aaf08;
 .testimonial {
   width: 100%;
   background-color: $theme_color_green;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
   &__text {
     margin-top: 5px;
     font-family: $subtitle_font;

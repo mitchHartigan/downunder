@@ -8,6 +8,9 @@ import ServicePreview from "./ServicePreview/index";
 import Why from "./Why/index";
 import AboutUs from "./AboutUs/index";
 import OurServices from "./OurServices/index";
+import ServiceArea from "./ServiceArea/index";
+import ContactUs from "./ContactUs/index";
+import Footer from "./Footer/index";
 
 // Is this component useless? Can't we just add everything in App.js?
 
@@ -43,6 +46,9 @@ export class Page extends Component {
         <Why />
         <AboutUs />
         <OurServices />
+        <ServiceArea />
+        <ContactUs />
+        <Footer />
       </div>
     );
   }

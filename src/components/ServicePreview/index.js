@@ -51,7 +51,7 @@ export default function ServicePreview() {
 }
 
 const PreviewContainer = styled.div`
-  height: 40vh;
+  height: 45vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -66,7 +66,7 @@ const Preview = styled.div`
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-around;
-  margin-bottom: ;
+  margin-bottom: 20px;
 `;
 
 const ServiceContainer = styled.div`

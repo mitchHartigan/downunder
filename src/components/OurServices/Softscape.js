@@ -16,9 +16,16 @@ export default function Softscape() {
 
       <Title>Softscape</Title>
       <DescriptionContainer>
-        <Description>Here is the description of the service.</Description>
+        <Description>
+          Here is the description of the service. Its super awesome, fun, and
+          fast as all hell.
+        </Description>
         <FeatureList>
           <Feature>Plants/Trees</Feature>
+          <Feature>Irrigation Systems</Feature>
+          <Feature>Drain Systems</Feature>
+          <Feature>Artificial Turf</Feature>
+          <Feature>Grass/Sod</Feature>
         </FeatureList>
       </DescriptionContainer>
     </Service>

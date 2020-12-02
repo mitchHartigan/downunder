@@ -11,7 +11,7 @@ import Design from "./Design";
 export default function OurServices() {
   return (
     <Container>
-      <PageTitle>Our Services</PageTitle>
+      <PageTitle titleStyles="font-weight: bold">Our Services</PageTitle>
       <ServicesContainer>
         <Softscape />
         <Hardscape />
@@ -35,6 +35,7 @@ const ServicesContainer = styled.div`
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
+  align-items: flex-start;
 `;
 
 export const Service = styled.div`
@@ -42,11 +43,12 @@ export const Service = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 320px;
 `;
 
 export const Title = styled.h1`
   margin: 1vh 0vw 1vh 0vw;
-  font-size: 18pt;
+  font-size: 20pt;
   font-weight: 600;
   font-family: Cardo;
 `;
@@ -59,6 +61,7 @@ export const DescriptionContainer = styled.div``;
 
 export const Description = styled.p`
   font-family: Roboto;
+  font-size: 14pt;
 `;
 
 export const FeatureList = styled.ul`
@@ -67,5 +70,6 @@ export const FeatureList = styled.ul`
 
 export const Feature = styled.li`
   font-family: Roboto;
-  margin: 0px;
+  margin: 10px 0px 10px 0px;
+  font-size: 14pt;
 `;

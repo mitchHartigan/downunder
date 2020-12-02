@@ -1,5 +1,6 @@
 import React from "react";
 import { TitleText, Button } from "./molecules";
+import styled from "styled-components";
 
 export default function Hero(props) {
   return (
@@ -11,13 +12,37 @@ export default function Hero(props) {
           <br></br>
           30 years in Orange County.
         </TitleText>
-        <Button
-          buttonStyle={"button--contactUs"}
-          containerStyle={"button__buttonContainer--center"}
-        >
-          Contact Us
-        </Button>
+        <ButtonContainer>
+          <CTAButton>Contact Us</CTAButton>
+        </ButtonContainer>
       </div>
     </div>
   );
 }
+
+const CTAButton = styled.button`
+  font-weight: normal;
+  font-family: Cardo;
+  font-size: 16pt;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 5px 30px 5px 30px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid white;
+  box-shadow: 0px 0px 0px 0px transparent;
+  transition: box-shadow 150ms ease;
+  outline: none;
+  &: hover {
+    box-shadow: 0px 0px 3px 1px white;
+    transition: box-shadow 150ms ease;
+  }
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+`;
