@@ -4,7 +4,7 @@ import { PageTitle } from "../Gallery/PageTitle";
 
 export default function ContactUs() {
   return (
-    <Container>
+    <Container id="contact-us">
       <ContactInfoRow>
         <Contact>
           <PageTitle titleStyles="font-weight: bold">Address</PageTitle>

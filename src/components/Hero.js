@@ -1,6 +1,7 @@
 import React from "react";
 import { TitleText, Button } from "./molecules";
 import styled from "styled-components";
+import ScrollWrapper from "./ScrollWrapper";
 
 export default function Hero(props) {
   return (
@@ -13,7 +14,9 @@ export default function Hero(props) {
           30 years in Orange County.
         </TitleText>
         <ButtonContainer>
-          <CTAButton>Contact Us</CTAButton>
+          <ScrollWrapper target="contact-us">
+            <CTAButton>Contact Us</CTAButton>
+          </ScrollWrapper>
         </ButtonContainer>
       </div>
     </div>

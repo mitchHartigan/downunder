@@ -4,7 +4,7 @@ import { PageTitle } from "../Gallery/PageTitle";
 
 export default function AboutUs() {
   return (
-    <Container>
+    <Container id="about-us">
       <PageTitle white="true">About Us</PageTitle>
       <HarborBridge src="AboutUs_opera_house.svg" alt="" />
       <Description>

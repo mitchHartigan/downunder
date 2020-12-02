@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink, Logo } from "./molecules";
 import DownunderLogo from "../images/downunderLogo.svg";
 import styled from "styled-components";
+import ScrollWrapper from "./ScrollWrapper";
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -25,10 +26,18 @@ export default class Header extends React.Component {
           <Logo logoSrc={DownunderLogo}></Logo>
         </div>
         <div className="navBar__navLinkContainer">
-          <NavLink>About Us</NavLink>
-          <NavLink>Services</NavLink>
-          <NavLink>Our Work</NavLink>
-          <NavLink>Contact</NavLink>
+          <ScrollWrapper target="about-us">
+            <NavLink>About Us</NavLink>
+          </ScrollWrapper>
+          <ScrollWrapper target="services">
+            <NavLink>Services</NavLink>
+          </ScrollWrapper>
+          <ScrollWrapper target="gallery">
+            <NavLink>Our Work</NavLink>
+          </ScrollWrapper>
+          <ScrollWrapper target="contact-us">
+            <NavLink>Contact</NavLink>
+          </ScrollWrapper>
         </div>
       </Navbar>
     );

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { PageTitle } from "../Gallery/PageTitle";
 import { Button } from "../molecules";
+import ScrollWrapper from "../ScrollWrapper";
 
 export default function ServicePreview() {
   return (
@@ -15,17 +16,19 @@ export default function ServicePreview() {
             Let's build your dream garden.
           </PageTitle>
           <DescriptionText>
-            We care a lot about what you want. And we'll make it happen. We care
-            a lot about what you want. And we'll make it happen. We care a lot
-            about what you want. And we'll make it happen. We care a lot about
-            what you want. And we'll make it happen.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
           </DescriptionText>
-          <Button
-            buttonStyle="button--green"
-            containerStyle="button__buttonContainer--left"
-          >
-            View our Services
-          </Button>
+          <ScrollWrapper target="services">
+            <Button
+              buttonStyle="button--green"
+              containerStyle="button__buttonContainer--left"
+            >
+              View our Services
+            </Button>
+          </ScrollWrapper>
         </DescriptionContainer>
 
         <ServiceContainer>

@@ -7,10 +7,10 @@ import { houses } from "./houseData";
 export default class Gallery extends Component {
   render() {
     return (
-      <Container>
+      <Container id="gallery">
         <PageTitle titleStyles="font-weight: bold">Our Work</PageTitle>
         <ProjectContainer>
-          {houses.map(house => {
+          {houses.map((house) => {
             return (
               <House
                 key={house.name}

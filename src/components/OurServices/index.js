@@ -10,7 +10,7 @@ import Design from "./Design";
 
 export default function OurServices() {
   return (
-    <Container>
+    <Container id="services">
       <PageTitle titleStyles="font-weight: bold">Our Services</PageTitle>
       <ServicesContainer>
         <Softscape />
@@ -59,7 +59,7 @@ export const Title = styled.h1`
 `;
 
 export const Image = styled.img`
-  ${props => props.extraStyles}
+  ${(props) => props.extraStyles}
 `;
 
 export const DescriptionContainer = styled.div``;

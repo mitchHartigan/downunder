@@ -148,6 +148,7 @@ $theme_color_green: #6aaf08;
   color: $font_color_white;
   padding: 5px 30px 5px 30px;
   cursor: pointer;
+  outline: none;
   &__buttonContainer {
     width: 100%;
     display: flex;

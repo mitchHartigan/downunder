@@ -120,10 +120,11 @@ const HouseContainer = styled.div`
 `;
 
 const HouseDescription = styled.p`
-  white-space: pre-wrap;
   font-family: Roboto;
   font-weight: 400;
   line-height: 45px;
+  text-align: left;
+  font-size: 14pt;
 `;
 
 const Image = styled.div`
