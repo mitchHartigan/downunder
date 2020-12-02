@@ -10,7 +10,7 @@ export default class Gallery extends Component {
       <Container>
         <PageTitle titleStyles="font-weight: bold">Our Work</PageTitle>
         <ProjectContainer>
-          {houses.map((house) => {
+          {houses.map(house => {
             return (
               <House
                 key={house.name}
@@ -35,6 +35,7 @@ const ProjectContainer = styled.div`
   justify-content: center;
   align-items: space-between;
   flex-wrap: wrap;
-  padding: 0vh 5vw 0vh 5vw;
+  padding: 0vh 1vw 0vh 1vw;
   margin-top: 20px;
+  margin-bottom: 50px;
 `;

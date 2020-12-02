@@ -39,6 +39,8 @@ const ServicesContainer = styled.div`
   align-items: flex-start;
   margin-top: 20px;
   margin-bottom: 40px;
+  margin-right: 60px;
+  margin-left: 60px;
 `;
 
 export const Service = styled.div`
@@ -57,7 +59,7 @@ export const Title = styled.h1`
 `;
 
 export const Image = styled.img`
-  ${(props) => props.extraStyles}
+  ${props => props.extraStyles}
 `;
 
 export const DescriptionContainer = styled.div``;
@@ -67,6 +69,9 @@ export const Description = styled.p`
   font-size: 14pt;
   line-height: 33px;
   margin: 5px 0px 25px 0px;
+  @media (max-width: 1600px) {
+    font-size: 12pt;
+  }
 `;
 
 export const FeatureList = styled.ul`
@@ -82,5 +87,8 @@ export const Feature = styled.li`
     content: "•";
     font-size: 12pt;
     margin-right: 10px;
+  }
+  @media (max-width: 1600px) {
+    font-size: 12pt;
   }
 `;

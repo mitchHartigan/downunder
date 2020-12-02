@@ -68,6 +68,9 @@ const ReasonTitle = styled.h2`
 const ReasonDescription = styled.p`
   font-family: Roboto;
   font-size: 16pt;
+  @media (max-width: 1600px) {
+    font-size: 14pt;
+  }
   text-align: center;
   max-width: 20vw;
   margin: 0px;

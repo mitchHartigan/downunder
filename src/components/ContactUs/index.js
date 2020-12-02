@@ -45,7 +45,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   min-height: 25vh;
-  padding: 2vh 14vw 4.5vh 14vw;
+  padding: 50px 14vw 80px 14vw;
 `;
 
 const ContactInfoRow = styled.div`

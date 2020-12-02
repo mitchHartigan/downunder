@@ -67,6 +67,8 @@ const Preview = styled.div`
   align-items: flex-end;
   justify-content: space-around;
   margin-bottom: 20px;
+  margin-left: 5vw;
+  margin-right: 5vw;
 `;
 
 const ServiceContainer = styled.div`
