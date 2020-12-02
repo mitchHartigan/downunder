@@ -20,9 +20,18 @@ export default function Hardscape() {
 
       <Title>Hardscape</Title>
       <DescriptionContainer>
-        <Description>Here is the description of the service.</Description>
+        <Description>
+          Here is the description of the service. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi.
+        </Description>
         <FeatureList>
-          <Feature>Plants/Trees</Feature>
+          <Feature>Fire Places/Fire Pits</Feature>
+          <Feature>Fences/Gates</Feature>
+          <Feature>Stone</Feature>
+          <Feature>Concrete</Feature>
+          <Feature>Fountains</Feature>
+          <Feature>BBQ's</Feature>
+          <Feature>Swimming Pools</Feature>
         </FeatureList>
       </DescriptionContainer>
     </Service>

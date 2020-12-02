@@ -7,10 +7,10 @@ import { houses } from "./houseData";
 export default class Gallery extends Component {
   render() {
     return (
-      <div>
-        <PageTitle>Our Work</PageTitle>
+      <Container>
+        <PageTitle titleStyles="font-weight: bold">Our Work</PageTitle>
         <ProjectContainer>
-          {houses.map(house => {
+          {houses.map((house) => {
             return (
               <House
                 key={house.name}
@@ -20,10 +20,14 @@ export default class Gallery extends Component {
             );
           })}
         </ProjectContainer>
-      </div>
+      </Container>
     );
   }
 }
+
+const Container = styled.div`
+  margin-top: 30px;
+`;
 
 const ProjectContainer = styled.div`
   display: flex;
@@ -31,4 +35,6 @@ const ProjectContainer = styled.div`
   justify-content: center;
   align-items: space-between;
   flex-wrap: wrap;
+  padding: 0vh 5vw 0vh 5vw;
+  margin-top: 20px;
 `;

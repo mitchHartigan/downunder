@@ -16,24 +16,23 @@ export function Testimonial(props) {
         pauseOnHover
         duration={300}
       >
-        <>
-          <Quote author="John Wick">
-            During their work here, Michael and his crew were very professional
-            - working hard every day, performing high quality work, leaving no
-            mess behind, and keeping open lines of communication. We will
-            definitely be looking to contact Michael again when we are ready to
-            focus on more of the softscape work to be done. Highly recommended.
-          </Quote>
-        </>
-        <>
-          <Quote author="John Wick">
-            During their work here, Michael and his crew were very professional
-            - working hard every day, performing high quality work, leaving no
-            mess behind, and keeping open lines of communication. We will
-            definitely be looking to contact Michael again when we are ready to
-            focus on more of the softscape work to be done. Highly recommended.
-          </Quote>
-        </>
+        <Quote author="John W">
+          During their work here, Michael and his crew were very professional -
+          working hard every day, performing high quality work, leaving no mess
+          behind, and keeping open lines of communication. We will definitely be
+          looking to contact Michael again when we are ready to focus on more of
+          the softscape work to be done. Highly recommended.
+        </Quote>
+        <Quote author="Jalene B">
+          Michael and his crew are the best around! As a new resident of the OC
+          we purchased a fixer upper with a great view. The final phase was the
+          yard, the sprinklers were non working for at lease 2 years and all the
+          plants were dead or dying. The access to the back patio was ugly and
+          dangerous. Michael put in beautiful stairs and even helped us convert
+          an empty crawl space to a great much needed storage area. The crew is
+          professional and always kept things clean and organized. Great at what
+          they do and very nice people as well!
+        </Quote>
       </Slider>
     </div>
   );

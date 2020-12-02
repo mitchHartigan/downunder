@@ -17,8 +17,8 @@ export default function Softscape() {
       <Title>Softscape</Title>
       <DescriptionContainer>
         <Description>
-          Here is the description of the service. Its super awesome, fun, and
-          fast as all hell.
+          Here is the description of the service. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi.
         </Description>
         <FeatureList>
           <Feature>Plants/Trees</Feature>

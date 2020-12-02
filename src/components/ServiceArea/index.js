@@ -18,7 +18,7 @@ const Container = styled.div`
 `;
 
 const Image = styled.img`
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 30px;
   box-shadow: 1px 3px 10px 3px #ababab;
 `;

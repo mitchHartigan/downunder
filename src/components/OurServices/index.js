@@ -28,6 +28,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 `;
 
 const ServicesContainer = styled.div`
@@ -36,6 +37,8 @@ const ServicesContainer = styled.div`
   width: 100%;
   justify-content: space-around;
   align-items: flex-start;
+  margin-top: 20px;
+  margin-bottom: 40px;
 `;
 
 export const Service = styled.div`
@@ -62,14 +65,22 @@ export const DescriptionContainer = styled.div``;
 export const Description = styled.p`
   font-family: Roboto;
   font-size: 14pt;
+  line-height: 33px;
+  margin: 5px 0px 25px 0px;
 `;
 
 export const FeatureList = styled.ul`
-  padding-left: 20px;
+  margin-left: -40px;
+  list-style: none;
 `;
 
 export const Feature = styled.li`
   font-family: Roboto;
-  margin: 10px 0px 10px 0px;
+  margin: 14px 0px 14px 0px;
   font-size: 14pt;
+  &:before {
+    content: "•";
+    font-size: 12pt;
+    margin-right: 10px;
+  }
 `;

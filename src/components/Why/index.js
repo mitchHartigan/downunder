@@ -40,7 +40,7 @@ const ReasonsConatainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 60px;
+  margin-top: 80px;
 `;
 
 const Container = styled.div`
@@ -48,6 +48,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   height: 40vh;
+  margin-bottom: 100px;
 `;
 
 const Reason = styled.div`

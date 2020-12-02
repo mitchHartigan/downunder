@@ -24,7 +24,7 @@ export default function ServicePreview() {
             buttonStyle="button--green"
             containerStyle="button__buttonContainer--left"
           >
-            View all services
+            View our Services
           </Button>
         </DescriptionContainer>
 

@@ -33,12 +33,13 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 `;
 
 const HarborBridge = styled.img`
-  margin-top: 35px;
-  margin-bottom: 40px;
+  margin-top: 45px;
+  margin-bottom: 50px;
   margin-right: -5px;
   width: 500px;
   height: auto;
