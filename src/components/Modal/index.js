@@ -35,7 +35,7 @@ export default class Modal extends Component {
               duration={300}
             >
               {house.images.map((source) => {
-                return <Image source={source} />;
+                return <Image source={source} key={Math.random()} />;
               })}
             </Slider>
 

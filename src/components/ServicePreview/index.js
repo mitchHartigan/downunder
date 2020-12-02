@@ -101,8 +101,6 @@ const ServiceDescription = styled.p`
   margin-bottom: -10px;
 `;
 
-const ServiceImage = styled.img``;
-
 const DescriptionContainer = styled.div`
   width: 30vw;
   display: flex;

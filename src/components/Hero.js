@@ -1,5 +1,5 @@
 import React from "react";
-import { TitleText, Button } from "./molecules";
+import { TitleText } from "./molecules";
 import styled from "styled-components";
 import ScrollWrapper from "./ScrollWrapper";
 
