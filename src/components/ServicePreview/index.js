@@ -116,5 +116,5 @@ const DescriptionText = styled.p`
   font-size: 16px;
   line-height: 40px;
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 10px;
 `;
