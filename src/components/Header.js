@@ -55,9 +55,9 @@ const Navbar = styled.div`
   height: 70px;
   z-index: 10;
   background-color: transparent;
-  transition: background-color 300ms ease-in;
+  transition: background-color 170ms linear;
   background-color: ${(props) => (props.scrolled ? "#6aaf08" : "transparent")};
   box-shadow: ${(props) =>
     props.scrolled ? "2px 1px 6px 1px #304d07;" : "none"}
-  transition: background-color 300ms ease;
+  transition: background-color 170ms linear;
 `;
