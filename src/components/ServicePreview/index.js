@@ -16,10 +16,10 @@ export default function ServicePreview() {
             Let's build your dream garden.
           </PageTitle>
           <DescriptionText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            We strive to create landscapes that fit every client’s lifestyle and
+            budget. Our experience allows us to work with a budget with out
+            sacrificing quality or customer service. Our goal is to help you
+            achieve a landscape that you will enjoy every day.
           </DescriptionText>
           <ScrollWrapper target="services">
             <Button
@@ -115,6 +115,6 @@ const DescriptionText = styled.p`
   font-family: Roboto;
   font-size: 16px;
   line-height: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   margin-top: 15px;
 `;

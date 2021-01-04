@@ -9,7 +9,7 @@ import Why from "./Why/index";
 import AboutUs from "./AboutUs/index";
 import OurServices from "./OurServices/index";
 import ServiceArea from "./ServiceArea/index";
-import ContactUs from "./ContactUs/index";
+import ContactUs from "./ContactInfo/index";
 import Footer from "./Footer/index";
 
 // Is this component useless? Can't we just add everything in App.js?

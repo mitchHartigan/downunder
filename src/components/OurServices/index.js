@@ -66,7 +66,7 @@ export const DescriptionContainer = styled.div``;
 
 export const Description = styled.p`
   font-family: Roboto;
-  font-size: 14pt;
+  font-size: 13pt;
   line-height: 33px;
   margin: 5px 0px 25px 0px;
   @media (max-width: 1600px) {
@@ -82,7 +82,7 @@ export const FeatureList = styled.ul`
 export const Feature = styled.li`
   font-family: Roboto;
   margin: 14px 0px 14px 0px;
-  font-size: 14pt;
+  font-size: 13pt;
   &:before {
     content: "•";
     font-size: 12pt;
