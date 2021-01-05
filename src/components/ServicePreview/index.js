@@ -19,7 +19,8 @@ export default function ServicePreview() {
             We strive to create landscapes that fit every client’s lifestyle and
             budget. Our experience allows us to work with a budget with out
             sacrificing quality or customer service. Our goal is to help you
-            achieve a landscape that you will enjoy every day.
+            achieve a landscape that you will enjoy every day. So come say G’
+            Day, and let us help you relax in your own backyard.
           </DescriptionText>
           <ScrollWrapper target="services">
             <Button
@@ -35,8 +36,8 @@ export default function ServicePreview() {
           <img src="lighting.svg" alt="" />
           <ServiceTitle>Lighting</ServiceTitle>
           <ServiceDescription>
-            Here is a description of this particular service. It is meant to go
-            onto two lines of text.
+            Lighting allows your garden and home architecture to take on a whole
+            new dimension.
           </ServiceDescription>
         </ServiceContainer>
 
@@ -44,8 +45,8 @@ export default function ServicePreview() {
           <img src="softscape.svg" alt="" />
           <ServiceTitle>Softscape</ServiceTitle>
           <ServiceDescription>
-            Here is a description of this particular service. It is meant to go
-            onto two lines of text.
+            The beauty and variety of plants can transform a yard into a living,
+            breathing haven.
           </ServiceDescription>
         </ServiceContainer>
       </Preview>
